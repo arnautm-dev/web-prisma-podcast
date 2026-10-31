@@ -16,7 +16,7 @@ const episodes = [
         spotifyUrl: "https://open.spotify.com/episode/0558pXZi8OYOaY6V8gUDMf?si=nqqIuxDkQtOUgTwSsJImRQ",
         sources: [],
         transcript: "",
-        featured: true
+        featured: false
     },
     {
         number: "02",
@@ -30,7 +30,7 @@ const episodes = [
         spotifyUrl: "https://open.spotify.com/episode/5yp6IqaqSGZ02govMcotYT?si=JnUUgAZnTAmlNaCcCP254w",
         sources: [],
         transcript: "",
-        featured: true
+        featured: false
     },
     {
         number: "03",
@@ -45,5 +45,32 @@ const episodes = [
         sources: [],
         transcript: "",
         featured: false
-    }
+    },
+    {
+        number: "04",
+        slug: "la-realidad-cuantica-de-la-materia",
+        title: "La realidad cuántica de la materia",
+        category: "Física",
+        date: "07/11/2026",
+        duration: "16min",
+        description: "Descubre el fascinante mundo de la física cuántica: desde la estructura de los átomos, los protones, neutrones y electrones, hasta los quarks, las partículas elementales y las fuerzas fundamentales. Exploraremos fenómenos sorprendentes como la superposición, el entrellaçament quàntic i l'experiment de la doble escletxa, per entendre com funciona la realitat a les escales més petites de l'univers.",
+        cover: "assets/ep04.png",
+        spotifyUrl: "",
+        sources: [
+            { title: "CERN — Standard Model", url: "https://home.cern/science/physics/standard-model" },
+            { title: "CERN — Subatomic particles", url: "https://home.cern/science/physics/subatomic-particles/" },
+            { title: "U.S. Department of Energy — Standard Model", url: "https://www.energy.gov/science/doe-explainsthe-standard-model-particle-physics" },
+            { title: "ATLAS — Physics", url: "https://atlas.cern/Discover/Physics" },
+            { title: "OpenStax — Atomic structure", url: "https://openstax.org/books/chemistry-2e/pages/2-3-atomic-structure-and-symbolism" },
+            { title: "IUPAC — Periodic Table", url: "https://iupac.org/iptei/" },
+            { title: "U.S. Energy Information Administration — Nuclear energy", url: "https://www.eia.gov/energyexplained/nuclear/" },
+            { title: "Institute of Physics — Quantum mechanics", url: "https://www.iop.org/explore-physics/big-ideas-physics/quantum-mechanics" },
+            { title: "Nobel Prize — Quantised world", url: "https://educationalgames.nobelprize.org/educational/physics/quantised_world/final-3.html" },
+            { title: "Nobel Prize — 2022 Physics Prize", url: "https://www.nobelprize.org/prizes/physics/2022/popular-information/" },
+            { title: "APS Physics — Quantum physics", url: "https://physics.aps.org/articles/v15/153" },
+            { title: "Nobel Prize — 2022 Physics Prize summary", url: "https://www.nobelprize.org/prizes/physics/2022/summary/" }
+        ],
+        transcript: "",
+        featured: true
+    },
 ];
