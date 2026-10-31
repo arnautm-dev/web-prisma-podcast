@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PRISMA — Todo está conectado. Un podcast para comprender el mundo desde nuevas perspectivas.">
+    <meta name="theme-color" content="#101d2b">
+    <title>PRISMA — Todo está conectado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-grain"></div>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="PRISMA, inicio">
+            <span class="brand-mark">P<span>.</span></span>
+            <span class="brand-name">PRISMA</span>
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+        <nav class="main-nav">
+            <a href="#episodios">Episodios</a>
+            <a href="#temas">Temas</a>
+            <a href="#sobre">Sobre PRISMA</a>
+            <a href="#contacto">Contacto</a>
+            <a class="nav-spotify" href="https://open.spotify.com/" target="_blank" rel="noopener">Escuchar en Spotify <span>↗</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-copy reveal">
+                <div class="eyebrow"><span class="eyebrow-line"></span> UN PODCAST DE DIVULGACIÓN</div>
+                <h1>El mundo no se entiende desde <em>un solo ángulo.</em></h1>
+                <p class="hero-lead">Historia, ciencia, sociedad y tecnología. Ideas que se cruzan para descubrir lo que hay detrás de las cosas.</p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="#episodios">Explorar episodios <span>↘</span></a>
+                    <a class="text-link" href="#sobre">Conoce PRISMA <span>→</span></a>
+                </div>
+            </div>
+            <div class="hero-art reveal">
+                <div class="art-orbit orbit-one"></div>
+                <div class="art-orbit orbit-two"></div>
+                <div class="art-glow"></div>
+                <div class="prism">
+                    <div class="prism-face face-left"></div>
+                    <div class="prism-face face-right"></div>
+                    <div class="prism-face face-bottom"></div>
+                    <div class="prism-beam"></div>
+                </div>
+                <span class="orbit-label label-history">HISTORIA</span>
+                <span class="orbit-label label-science">CIENCIA</span>
+                <span class="orbit-label label-society">SOCIEDAD</span>
+                <span class="art-caption">UNA MIRADA<br>CON MÁS MATICES</span>
+            </div>
+            <div class="hero-bottom"><span>01 / CURIOSIDAD</span><span>TODO ESTÁ CONECTADO</span><span>02 / CONOCIMIENTO</span></div>
+        </section>
+
+        <section class="intro-strip">
+            <p>No se trata solo de saber <em>qué</em> pasó.<br>Se trata de entender <em>por qué.</em></p>
+            <span class="strip-symbol">✳</span>
+        </section>
+
+        <section class="section episodes-section" id="episodios">
+            <div class="section-heading reveal">
+                <div><div class="eyebrow"><span class="eyebrow-line"></span> EL ARCHIVO PRISMA</div><h2>Ideas para<br><em>mirar distinto.</em></h2></div>
+                <a class="text-link" href="#catalogo">Ver todos los episodios <span>→</span></a>
+            </div>
+            <div class="featured-episode" id="featured-episode"></div>
+            <div class="catalog-head" id="catalogo">
+                <div><span class="eyebrow">CATÁLOGO</span><h3>Todos los episodios</h3></div>
+                <div class="filter-list" id="category-filters" aria-label="Filtrar por categoría"></div>
+            </div>
+            <div class="episode-grid" id="episode-grid"></div>
+        </section>
+
+        <section class="topics-section" id="temas">
+            <div class="section topics-inner">
+                <div class="topics-intro reveal">
+                    <div class="eyebrow"><span class="eyebrow-line"></span> MUCHAS PERSPECTIVAS</div>
+                    <h2>Un mundo.<br><em>Mil conexiones.</em></h2>
+                    <p>Saltamos de una época a otra, de una pregunta científica a un fenómeno social. Porque el conocimiento no tiene fronteras.</p>
+                </div>
+                <div class="topic-list">
+                    <a class="topic-item reveal" href="#catalogo" data-topic="Historia"><span class="topic-number">01</span><span class="topic-name">Historia</span><span class="topic-desc">El pasado que explica el presente</span><span class="topic-arrow">↗</span></a>
+                    <a class="topic-item reveal" href="#catalogo" data-topic="Ciencia"><span class="topic-number">02</span><span class="topic-name">Ciencia</span><span class="topic-desc">Las reglas que mueven el universo</span><span class="topic-arrow">↗</span></a>
+                    <a class="topic-item reveal" href="#catalogo" data-topic="Sociedad"><span class="topic-number">03</span><span class="topic-name">Sociedad</span><span class="topic-desc">Las ideas que nos dan forma</span><span class="topic-arrow">↗</span></a>
+                    <a class="topic-item reveal" href="#catalogo" data-topic="Tecnología"><span class="topic-number">04</span><span class="topic-name">Tecnología</span><span class="topic-desc">Lo que estamos construyendo</span><span class="topic-arrow">↗</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-section section" id="sobre">
+            <div class="about-image reveal">
+                <img src="assets/prisma-logo.png" alt="Identidad visual de PRISMA: un prisma que descompone la luz en un arcoíris" onerror="this.style.display='none'">
+                <div class="about-image-fallback"><span>PRISMA</span><small>TODO ESTÁ CONECTADO</small><div class="fallback-triangle"></div></div>
+            </div>
+            <div class="about-copy reveal">
+                <div class="eyebrow"><span class="eyebrow-line"></span> SOBRE EL PROYECTO</div>
+                <h2>La curiosidad es<br>el punto de <em>partida.</em></h2>
+                <p>PRISMA es un podcast de divulgación que explora preguntas, ideas y acontecimientos para comprender mejor el mundo. Con rigor, claridad y una mirada abierta, cada episodio propone observar un tema desde diferentes perspectivas.</p>
+                <p>Porque una misma realidad puede revelar mucho más cuando la miramos desde otro ángulo.</p>
+                <a class="text-link" href="#contacto">Hablemos <span>→</span></a>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contacto">
+            <div class="section contact-inner">
+                <div class="eyebrow"><span class="eyebrow-line"></span> ¿TIENES UNA PREGUNTA?</div>
+                <h2>La conversación<br><em>continúa contigo.</em></h2>
+                <p>¿Tienes una sugerencia, una corrección o una idea para un próximo episodio? PRISMA está abierto a nuevas perspectivas.</p>
+                <a class="button button-light" href="mailto:contacto@prisma-podcast.example">Escribir a PRISMA <span>↗</span></a>
+            </div>
+            <div class="contact-orbit"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand footer-brand" href="index.html"><span class="brand-mark">P<span>.</span></span><span class="brand-name">PRISMA</span></a>
+        <span class="footer-tagline">TODO ESTÁ CONECTADO.</span>
+        <div class="footer-links"><a href="#sobre">Sobre PRISMA</a><a href="#episodios">Episodios</a><a href="https://open.spotify.com/" target="_blank" rel="noopener">Spotify ↗</a></div>
+        <span class="copyright">© <span id="year"></span> PRISMA</span>
+    </footer>
+    <script src="episodes.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
