@@ -148,7 +148,7 @@ h1 em, h2 em, .featured-copy h3 em { color: var(--gold); font-style: normal; }
 .detail-block .eyebrow { color: #98734d; }.detail-block .eyebrow-line { background: #98734d; }
 .detail-block h2 { font: 600 28px var(--display); margin: 17px 0; letter-spacing: -.04em; }
 .detail-block p, .pending-note { color: #67727b; font-size: 13px; line-height: 1.85; }
-.source-list { padding-left: 18px; color: #67727b; font-size: 13px; line-height: 1.8; }.source-list li { margin-bottom: 12px; }.source-list a { color: #765b3c; text-decoration: underline; text-underline-offset: 3px; }.source-list small { display: block; }
+.source-list { padding-left: 18px; color: #67727b; font-size: 13px; line-height: 1.8; }.source-list li { margin-bottom: 5px; }.source-list a { color: #765b3c; text-decoration: underline; text-underline-offset: 3px; }.source-list small { display: block; }
 .transcript-block { grid-column: 1/-1; border-top: 1px solid rgba(23,35,49,.18); padding-top: 35px; }.transcript-text { white-space: pre-wrap; color: #67727b; font-size: 13px; line-height: 2; max-width: 800px; }
 .detail-next { padding: 85px 12%; }.detail-next .eyebrow { color: var(--gold); }.detail-next h2 { margin: 20px 0 28px; }.not-found { padding: 140px 12%; }.not-found h1 { font: 600 60px var(--display); margin: 20px 0 35px; }.not-found em { color: var(--gold); font-style: normal; }
 .detail-loading { padding: 120px 12%; color: #aeb8c0; }
