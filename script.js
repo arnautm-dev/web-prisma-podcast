@@ -53,17 +53,27 @@ function renderCatalogue() {
     const grid = document.querySelector("#episode-grid");
     const filters = document.querySelector("#category-filters");
     const featuredContainer = document.querySelector("#featured-episode");
-    const categories = ["Todos", ...new Set(episodes.map(ep => ep.category))];
+    const categories = [...new Set(episodes.map(ep => ep.category))];
 
     if (filters) {
-        filters.innerHTML = categories.map((category, index) =>
-            `<button class="filter-button ${index === 0 ? "active" : ""}" data-category="${category}">${category}</button>`
-        ).join("");
-        filters.addEventListener("click", event => {
-            const button = event.target.closest("button[data-category]");
-            if (!button) return;
-            filters.querySelectorAll("button").forEach(item => item.classList.toggle("active", item === button));
-            renderCards(button.dataset.category);
+        filters.innerHTML = `
+            <button class="filter-button active" type="button" data-category="Todos">Todos</button>
+            <select class="filter-select" aria-label="Filtrar per categoria">
+                <option value="" selected>Categoria</option>
+                ${categories.map(category => `<option value="${category}">${category}</option>`).join("")}
+            </select>`;
+        const allButton = filters.querySelector("button[data-category='Todos']");
+        const categorySelect = filters.querySelector(".filter-select");
+        allButton.addEventListener("click", () => {
+            categorySelect.value = "";
+            categorySelect.classList.remove("active");
+            allButton.classList.add("active");
+            renderCards("Todos");
+        });
+        categorySelect.addEventListener("change", () => {
+            allButton.classList.toggle("active", !categorySelect.value);
+            categorySelect.classList.toggle("active", Boolean(categorySelect.value));
+            renderCards(categorySelect.value || "Todos");
         });
     }
 
